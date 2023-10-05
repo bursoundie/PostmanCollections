@@ -1,0 +1,390 @@
+{
+	"id": "3bb45eb3-8b7a-4fc0-97c6-baaf14e7fa05",
+	"name": "Polaris.Ecashier",
+	"timestamp": "2023-09-22T11:07:35.023Z",
+	"collection_id": "349554-369db97c-d41f-48b6-8a64-217be4c2fca1",
+	"folder_id": 0,
+	"environment_id": "23344183-1703a583-f870-4af1-b02a-e0cf25dd757f",
+	"totalPass": 28,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-09-22T11:07:21.119Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "821a0464-f50d-48a8-89a8-878078521bc0",
+			"name": "/api/XpressPay/GetAvailableMerchants",
+			"url": "172.24.114.16:8050/api/XpressPay/GetAvailableMerchants?branchCode=123",
+			"time": 203,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response has required fields": true,
+				"Check that decryption is successful": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check that decryption is successful": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				203
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response has required fields": true,
+					"Check that decryption is successful": true
+				}
+			]
+		},
+		{
+			"id": "10b23782-81b5-409e-a6d0-05fe580bc18e",
+			"name": "/api/XpressPay/GetPaymentOptions",
+			"url": "172.24.114.16:8050/api/XpressPay/GetPaymentOptions?branchCode=123",
+			"time": 202,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has required fields": true,
+				"responseCode is a non-empty string": true,
+				"Response message is a non-empty string": true,
+				"Data is an object": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"responseCode is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is an object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				202
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has required fields": true,
+					"responseCode is a non-empty string": true,
+					"Response message is a non-empty string": true,
+					"Data is an object": true
+				}
+			]
+		},
+		{
+			"id": "750f219a-e89e-4ff6-bb1b-be0df465b299",
+			"name": "/api/XpressPay/GetPaymentOptionItems",
+			"url": "172.24.114.16:8050/api/XpressPay/GetPaymentOptionItems",
+			"time": 9343,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has required fields": true,
+				"responseCode is a non-empty string": true,
+				"Response message is a non-empty string": true,
+				"Data is an object": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"responseCode is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is an object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9343
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has required fields": true,
+					"responseCode is a non-empty string": true,
+					"Response message is a non-empty string": true,
+					"Data is an object": true
+				}
+			]
+		},
+		{
+			"id": "82ae41bc-5fdc-4d99-a42f-0ab99d871252",
+			"name": "/api/XpressPay/GetMerchantPaymentItems",
+			"url": "172.24.114.16:8050/api/XpressPay/GetMerchantPaymentItems",
+			"time": 925,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response has required fields": true,
+				"ResponseCode Lenght": true,
+				"Verify 'data' field in the response": true
+			},
+			"testPassFailCounts": {
+				"Response has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ResponseCode Lenght": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify 'data' field in the response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				925
+			],
+			"allTests": [
+				{
+					"Response has required fields": true,
+					"ResponseCode Lenght": true,
+					"Verify 'data' field in the response": true
+				}
+			]
+		},
+		{
+			"id": "6a8f5077-0162-4f41-a2f8-8e8163d0f5f8",
+			"name": "/api/XpressPay/GetPaymentMethods",
+			"url": "172.24.114.16:8050/api/XpressPay/GetPaymentMethods",
+			"time": 448,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"responseCode is a string": true,
+				"resposeMessage is a string": true,
+				"Data is an object": true
+			},
+			"testPassFailCounts": {
+				"responseCode is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"resposeMessage is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is an object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				448
+			],
+			"allTests": [
+				{
+					"responseCode is a string": true,
+					"resposeMessage is a string": true,
+					"Data is an object": true
+				}
+			]
+		},
+		{
+			"id": "7c8358a2-4702-49ee-b571-860917eb3ecc",
+			"name": "/api/XpressPay/GetPaymentChannels",
+			"url": "172.24.114.16:8050/api/XpressPay/GetPaymentChannels",
+			"time": 818,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"responseCode is a string": true,
+				"resposeMessage is a string": true,
+				"Data is an object": true
+			},
+			"testPassFailCounts": {
+				"responseCode is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"resposeMessage is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is an object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				818
+			],
+			"allTests": [
+				{
+					"responseCode is a string": true,
+					"resposeMessage is a string": true,
+					"Data is an object": true
+				}
+			]
+		},
+		{
+			"id": "84efd61c-a192-42b9-aeb9-ff5c31395bcd",
+			"name": "/api/XpressPay/GetTaxOffices",
+			"url": "172.24.114.16:8050/api/XpressPay/GetTaxOffices",
+			"time": 350,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"responseCode is a string": true,
+				"resposeMessage is a string": true,
+				"Data is an object": true
+			},
+			"testPassFailCounts": {
+				"responseCode is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"resposeMessage is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is an object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				350
+			],
+			"allTests": [
+				{
+					"responseCode is a string": true,
+					"resposeMessage is a string": true,
+					"Data is an object": true
+				}
+			]
+		},
+		{
+			"id": "af9aad68-f9ad-4f26-93cd-24c747d31b79",
+			"name": "/api/XpressPay/PrintReceipt",
+			"url": "172.24.114.16:8050/api/XpressPay/PrintReceipt",
+			"time": 636,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"responseCode is a string": true,
+				"resposeMessage is a string": true,
+				"Data is an object": true
+			},
+			"testPassFailCounts": {
+				"responseCode is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"resposeMessage is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is an object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				636
+			],
+			"allTests": [
+				{
+					"responseCode is a string": true,
+					"resposeMessage is a string": true,
+					"Data is an object": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 12925,
+	"collection": {
+		"requests": [
+			{
+				"id": "821a0464-f50d-48a8-89a8-878078521bc0",
+				"method": "GET"
+			},
+			{
+				"id": "10b23782-81b5-409e-a6d0-05fe580bc18e",
+				"method": "GET"
+			},
+			{
+				"id": "750f219a-e89e-4ff6-bb1b-be0df465b299",
+				"method": "POST"
+			},
+			{
+				"id": "82ae41bc-5fdc-4d99-a42f-0ab99d871252",
+				"method": "POST"
+			},
+			{
+				"id": "6a8f5077-0162-4f41-a2f8-8e8163d0f5f8",
+				"method": "POST"
+			},
+			{
+				"id": "7c8358a2-4702-49ee-b571-860917eb3ecc",
+				"method": "POST"
+			},
+			{
+				"id": "84efd61c-a192-42b9-aeb9-ff5c31395bcd",
+				"method": "POST"
+			},
+			{
+				"id": "af9aad68-f9ad-4f26-93cd-24c747d31b79",
+				"method": "POST"
+			}
+		]
+	}
+}
